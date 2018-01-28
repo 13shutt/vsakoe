@@ -1,0 +1,29 @@
+.fa-check {
+    margin-right: 15px;
+    visibility: hidden;
+    cursor: pointer;
+    color: rgb(48, 197, 48);
+}
+
+li:hover > a > i.fa-check {
+    visibility: visible;
+}
+
+.fa-remove {
+    visibility: hidden;
+    cursor: pointer;
+    color: rgb(197, 42, 42);
+}
+
+li:hover > a > i.fa-remove {
+    visibility: visible;
+}
+
+.done-item {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.hidden {
+    display: none;
+}

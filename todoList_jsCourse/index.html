@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s2"></div>
+                <div class="card col s8">
+                    <div class="card-content" id='main'>
+                        <span class="card-title">TODO List</span>
+                        <form id="task-form">
+                            <div class="row"> 
+                                <div class="input-field col s12">
+                                    <input id="task" type="text" name='task'>
+                                    <label for="task">Type Your task here!</label>
+                                    <input type="submit" value="ADD TASK" class='btn'>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="tasks-field">
+                            <blockquote>
+                                <h5>Your tasks adds here    <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></h5>
+                            </blockquote>
+                            <ul class="collection" id='tasks-list'></ul>
+                        </div>
+                        <div class="filter-buttons">
+                            <span id="tasks-counter" class="new badge grey" data-badge-caption="">0 tasks left</span>
+                            <a id="allTasksBtn" class="waves-effect waves-yellow darken-2 btn yellow">All tasks</a>
+                            <a id="doneTasksBtn" class="waves-effect waves-green darken-2 btn green">Done tasks</a>
+                            <a id="clearBtn" class="waves-effect waves-red btn-flat">Clear all</a>
+                        </div>
+                    </div>
+                </div>
+            <div class="col s2"></div>
+        </div>
+    </div>
+
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
