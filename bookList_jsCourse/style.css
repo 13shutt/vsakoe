@@ -1,0 +1,15 @@
+.alert {
+  background: red;
+}
+
+.success {
+  background: green;
+}
+
+.alert, .success {
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px 0px 15px 0px;
+  color: wheat;
+}
